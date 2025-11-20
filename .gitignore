@@ -1,0 +1,59 @@
+# ===================== System-Specific Ignore (Win11 + Ubuntu 24.04) =====================
+# Win11 exclusive files
+Thumbs.db                # Thumbnail cache file
+ehthumbs.db              # Enhanced thumbnail cache file
+*.tmp                    # System temporary files
+*.bak                    # Backup files
+*.swp                    # Temporary swap files
+$RECYCLE.BIN/             # Recycle Bin folder
+Desktop.ini              # Folder custom configuration file
+*.lnk                    # Shortcut files
+AppData/                 # Local application data (local-only)
+# Ubuntu 24.04 exclusive files
+*~                       # Linux general temporary files
+.fuse_hidden*            # FUSE filesystem hidden files
+.Trash-*                 # Ubuntu recycle bin folder
+.nfs*                    # NFS temporary files
+.aptitude/               # Aptitude cache (Ubuntu)
+.dpkg/                   # Dpkg temporary files (Ubuntu)
+# Cross-system general system files
+.DS_Store                # (Keep if using macOS occasionally; remove for pure Win/Ubuntu)
+*.log                    # Local debug logs (cross-system)
+
+# ===================== VS Code Editor Exclusive =====================
+.vscode/                 # Editor config (plugins, debug, settings - no need to sync cross-system)
+*.code-workspace         # VS Code workspace file (local customization)
+.history/                # Plugin-generated edit history
+.settings/               # VS Code legacy config folder
+
+# ===================== Python Exclusive (Cross-System) =====================
+__pycache__/             # Compilation cache (generated on both Win/Ubuntu)
+*.py[cod]                # Individual .pyc/.pyo files
+*$py.class               # Python compiled files (Windows)
+*.so                     # Python extension libraries (Ubuntu)
+env/                     # Python virtual environment (Windows)
+venv/                    # Python virtual environment (Ubuntu/Win universal)
+.venv/                   # Alternative virtual environment naming
+requirements.txt.bak     # Requirements backup file
+
+# ===================== C/C++ Exclusive (Cross-System) =====================
+# Compilation artifacts
+*.o                      # Object files (generated on both Win/Ubuntu)
+*.out                    # Executable files (Ubuntu)
+*.exe                    # Executable files (Win11)
+*.dll                    # Dynamic link libraries (Windows)
+*.so                     # Shared libraries (Ubuntu)
+*.dylib                  # (Remove if not using macOS)
+# Compilation tool cache
+cmake-build-debug/       # CMake debug build directory
+cmake-build-release/     # CMake release build directory
+Makefile.bak             # Makefile backup
+*.swo                    # Vim cache (if occasionally used)
+# Clang/GCC temporary files (cross-system)
+*.ii
+*.s
+
+# ===================== General Redundant Files =====================
+*.zip                    # Local compressed packages (upload separately if sharing)
+*.rar                    # Compressed packages
+.idea/                   # (Remove if not using PyCharm)
