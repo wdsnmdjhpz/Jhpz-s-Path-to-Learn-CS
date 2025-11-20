@@ -1,0 +1,24 @@
+# Unify line endings to LF (compatible with Win11/Ubuntu 24.04)
+* text=auto eol=lf
+
+# Mark binary files (no line-ending conversion to avoid corruption)
+# Experiment report PDFs
+*.pdf binary
+# Images (for PDF illustrations/notes)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+# C/C++ compilation artifacts (Win/Ubuntu)
+*.exe binary
+*.dll binary
+*.so binary
+*.o binary
+*.out binary
+*.dylib binary
+# Python compiled files
+*.so binary
+*.pyc binary
+# Other binary files
+*.zip binary
+*.rar binary
